@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ကျွန်ုပ်၏ ဓာတ်ပုံပြခန်း</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ကျွန်ုပ်၏ ဓာတ်ပုံပြခန်း</h1>  
+        <nav>
+            <ul>
+                <li><a href="#home">ပင်မ</a></li>
+                <li><a href="#gallery">ဓာတ်ပုံများ</a></li>
+                <li><a href="#about">ကျွန်ုပ်အကြောင်း</a></li>
+                <li><a href="#contact">ဆက်သွယ်ရန်</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h2>အနုပညာဆန်သော ဓာတ်ပုံများဖြင့် ကမ္ဘာကို မှတ်တမ်းတင်ခြင်း။</h2>
+            <p>လှပသော အခိုက်အတန့်များကို ဖမ်းယူထားသည့် ကျွန်ုပ်၏ လက်ရာများကို ရှာဖွေလိုက်ပါ။</p>
+            <a href="#gallery" class="button">ဓာတ်ပုံများ ကြည့်ရန်</a>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <h2>ကျွန်ုပ်၏ လက်ရာများ</h2>
+            <div class="image-grid">
+                <div class="gallery-item">
+                    <img src="/img/photo1.jpg" alt="ရှုခင်းဓာတ်ပုံ" onclick="openLightbox('/img/photo1.jpg', 'လှပသော ရှုခင်း')">
+                </div>
+                <div class="gallery-item">
+                    <img src="/img/photo4.jpg" alt="လူပုံ" onclick="openLightbox('/img/photo4.jpg', 'ပျော်ရွှင်ဖွယ် အခိုက်အတန့်')">
+                </div>
+                <div class="gallery-item">
+                    <img src="/img/photo3.jpg" alt="သဘာဝ" onclick="openLightbox('/img/photo3.jpg', 'သဘာဝ အလှတရား')">
+                </div>
+                <div class="gallery-item">
+                    <img src="/img/photo7.jpg" alt="အစားအသောက်" onclick="openLightbox('/img/photo7.jpg', 'အရသာရှိသော အစားအသောက်')">
+                </div>
+                </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>ကျွန်ုပ်အကြောင်း</h2>
+            <p>ကျွန်ုပ်သည် ဓာတ်ပုံပညာကို ဝါသနာပါသော ဓာတ်ပုံဆရာတစ်ဦးဖြစ်ပြီး၊ သဘာဝအလှများ၊ လူ့ပတ်ဝန်းကျင်နှင့် အထူးအခမ်းအနားများ၏ အမှတ်ရဖွယ်အခိုက်အတန့်များကို မှတ်တမ်းတင်ရတာကို နှစ်သက်ပါသည်။ ကျွန်ုပ်၏ ရည်ရွယ်ချက်မှာ ဓာတ်ပုံများမှတစ်ဆင့် ပုံပြင်များကို ပြောပြရန် ဖြစ်ပါသည်။</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>ဆက်သွယ်ရန်</h2>
+            <p>ကျွန်ုပ်၏ ဓာတ်ပုံဝန်ဆောင်မှုများ သို့မဟုတ် မေးမြန်းစုံစမ်းလိုသည်များရှိပါက အောက်ပါအတိုင်း ဆက်သွယ်နိုင်ပါသည်။</p>
+            <ul>
+                <li>Email: example@email.com</li>
+                <li>ဖုန်း: +95 9 XXXXXXXX</li>
+                <li>လူမှုကွန်ရက်: <a href="#">Facebook</a> | <a href="#">Instagram</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; ၂၀၂၅ ကျွန်ုပ်၏ ဓာတ်ပုံပြခန်း။ All rights reserved.</p>
+    </footer>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-button">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
